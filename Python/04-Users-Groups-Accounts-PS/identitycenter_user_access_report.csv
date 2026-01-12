@@ -1,0 +1,17 @@
+UserId,UserName,Email,Groups,AccountId,AccountName,PermissionSet,Status
+b4f8c4f8-d091-709b-020e-d05fef77eb40,sanduser,nagarajan.chelliya+sand@gmail.com,Sandbox-ReadOnly-Group,242332171291,Sandbox,AWSReadOnlyAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,270653820293,NOT_FOUND,AWSOrganizationsFullAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,683244701353,Network,AWSOrganizationsFullAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,242332171291,Sandbox,AWSOrganizationsFullAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,075096050768,NOT_FOUND,AWSOrganizationsFullAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,138410485860,Audit,AWSAdministratorAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,049913821323,Nagarajan,AWSAdministratorAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,489398490228,Log Archive,AWSAdministratorAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,079561539209,Identity Management,AWSOrganizationsFullAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,489398490228,Log Archive,AWSAdministratorAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,242332171291,Sandbox,AWSAdministratorAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,075096050768,NOT_FOUND,AWSAdministratorAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,270653820293,NOT_FOUND,AWSAdministratorAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,683244701353,Network,AWSAdministratorAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,079561539209,Identity Management,AWSAdministratorAccess,OK
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory;AWSControlTowerAdmins;AWSLogArchiveAdmins,049913821323,Nagarajan,AWSServiceCatalogEndUserAccess,OK
