@@ -1,0 +1,3 @@
+UserId,UserName,Email,Groups
+b4f8c4f8-d091-709b-020e-d05fef77eb40,sanduser,nagarajan.chelliya+sand@gmail.com,Sandbox-ReadOnly-Group
+c48874c8-9011-70f5-1dd0-11f7a2204e53,nagarajan.chelliya@gmail.com,nagarajan.chelliya@gmail.com,AWSAccountFactory|AWSLogArchiveAdmins|AWSControlTowerAdmins

@@ -1,0 +1,218 @@
+[
+  {
+    "PermissionSetName": "AWSServiceCatalogEndUserAccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-2f47c95c56229485",
+    "Description": "Provides access to the AWS Service Catalog end user console",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-09-29T12:28:11.289000+01:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "AWSServiceCatalogEndUserFullAccess",
+        "Arn": "arn:aws:iam::aws:policy/AWSServiceCatalogEndUserFullAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": "{\"Version\": \"2012-10-17\",\"Statement\": [{\"Sid\": \"AWSControlTowerAccountFactoryAccess\",\"Effect\": \"Allow\",\"Action\": [\"sso:GetProfile\",\"sso:CreateProfile\", \"sso:UpdateProfile\",\"sso:AssociateProfile\",\"sso:CreateApplicationInstance\",\"sso:GetSSOStatus\",\"sso:GetTrust\",\"sso:CreateTrust\",\"sso:UpdateTrust\",\"sso:GetPeregrineStatus\",\"sso:GetApplicationInstance\",\"sso:ListDirectoryAssociations\",\"sso:ListPermissionSets\",\"sso:GetPermissionSet\",\"sso:ProvisionApplicationInstanceForAWSAccount\",\"sso:ProvisionApplicationProfileForAWSAccountInstance\",\"sso:ProvisionSAMLProvider\",\"sso:ListProfileAssociations\",\"sso-directory:ListMembersInGroup\",\"sso-directory:SearchGroups\",\"sso-directory:SearchGroupsWithGroupName\",\"sso-directory:SearchUsers\",\"sso-directory:CreateUser\",\"sso-directory:DescribeGroups\",\"sso-directory:DescribeDirectory\",\"sso-directory:GetUserPoolInfo\",\"controltower:CreateManagedAccount\",\"controltower:DescribeManagedAccount\",\"controltower:DeregisterManagedAccount\",\"s3:GetObject\",\"organizations:describeOrganization\",\"sso:DescribeRegisteredRegions\"],\"Resource\": \"*\"}]}",
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "AWSOrganizationsFullAccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-e9a81c3ac415e4f4",
+    "Description": "Provides full access to AWS Organizations",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-09-29T12:28:12.457000+01:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "AWSOrganizationsFullAccess",
+        "Arn": "arn:aws:iam::aws:policy/AWSOrganizationsFullAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "NC-Admin-s3Denyaccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-7223c489479e8021",
+    "Description": "",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-12-26T20:32:23.172000+00:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "AdministratorAccess",
+        "Arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"Statement1\",\"Effect\":\"Deny\",\"Action\":[\"s3:*\"],\"Resource\":[\"*\"]}]}",
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "AWSReadOnlyAccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-510a9bacb52d318a",
+    "Description": "This policy grants permissions to view resources and basic metadata across all AWS services",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-09-29T12:28:12.176000+01:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "ViewOnlyAccess",
+        "Arn": "arn:aws:iam::aws:policy/job-function/ViewOnlyAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "PS-EC2-FullAccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-7223caa62f740c17",
+    "Description": "",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-12-26T20:20:33.662000+00:00",
+    "AttachedManagedPolicies": [],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"Statement1\",\"Effect\":\"Allow\",\"Action\":[\"ec2:*\"],\"Resource\":[\"*\"]}]}",
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "Sandbox-AdministratorAccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-72232ab21174908e",
+    "Description": "",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-12-26T20:00:02.391000+00:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "AdministratorAccess",
+        "Arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "NC-s3fullaccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-7223516ef6f4efff",
+    "Description": "",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-12-26T19:47:12.107000+00:00",
+    "AttachedManagedPolicies": [],
+    "CustomerManagedPolicyReferences": [
+      {
+        "Name": "s3-full-access",
+        "Path": "/"
+      }
+    ],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "AWSPowerUserAccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-a78a039d06f14a09",
+    "Description": "Provides full access to AWS services and resources, but does not allow management of Users and groups",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-09-29T12:28:11.882000+01:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "PowerUserAccess",
+        "Arn": "arn:aws:iam::aws:policy/PowerUserAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "AWSAdministratorAccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-dfd01c1e00f0a32a",
+    "Description": "Provides full access to AWS services and resources",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-09-29T12:28:10.857000+01:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "AdministratorAccess",
+        "Arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "NC-S3FullAccess-PS",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-72233493f2fded74",
+    "Description": "",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-12-26T20:12:34.615000+00:00",
+    "AttachedManagedPolicies": [],
+    "CustomerManagedPolicyReferences": [
+      {
+        "Name": "NC-S3-FullAccess",
+        "Path": "/"
+      }
+    ],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "NC-AdministratorAccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-7223f51bc8039332",
+    "Description": "",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-12-26T19:26:46.732000+00:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "AdministratorAccess",
+        "Arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "AWSServiceCatalogAdminFullAccess",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-a1d478a6ff41cebc",
+    "Description": "Provides full access to AWS Service Catalog admin capabilities",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2025-09-29T12:28:11.636000+01:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "AWSServiceCatalogAdminFullAccess",
+        "Arn": "arn:aws:iam::aws:policy/AWSServiceCatalogAdminFullAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  },
+  {
+    "PermissionSetName": "AWS-Admin-NonProd",
+    "PermissionSetArn": "arn:aws:sso:::permissionSet/ssoins-7223e44c4895dfe6/ps-722316ce17412467",
+    "Description": "AWS-Administrative access for all non production accounts",
+    "SessionDuration": "PT1H",
+    "RelayState": "",
+    "CreatedDate": "2026-01-02T19:19:19.047000+00:00",
+    "AttachedManagedPolicies": [
+      {
+        "Name": "AdministratorAccess",
+        "Arn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      }
+    ],
+    "CustomerManagedPolicyReferences": [],
+    "InlinePolicy": null,
+    "PermissionsBoundary": null
+  }
+]
