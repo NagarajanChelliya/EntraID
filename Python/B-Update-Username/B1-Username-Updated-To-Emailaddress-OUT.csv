@@ -1,0 +1,5 @@
+UserId,UserName,EmailId,FirstName,LastName,DisplayName,Groups,Result
+34e834a8-20c1-704c-3b69-ce2ae8f79d9e,lidr461,nagarajan.chelliya+test@gmail.com,testfirst,last,testfirst last,AWS-Sandbox-ReadOnly-Group|IdentityGroup,Update Success
+24f8b4a8-4041-70d2-5c6b-34aca4f901f9,lidr462,networkuser1@CloudArchitechs.onmicrosoft.com,firstname,lastname,networkuser1,AWS-Network-Admin-Network,Update Success
+f428f4b8-80d1-70b3-732d-c80ff8ea1776,lidr463,networkuser@CloudArchitechs.onmicrosoft.com,NetworkFirst,Last,Networkuser,AWS-Network-Admin-Network,Update Success
+a4b8e408-b0d1-7027-37a0-fca306481047,lidr464,sandboxuser@CloudArchitechs.onmicrosoft.com,Sandboxuser,LsatName,sandboxuser,AWS-Sandbox-ReadOnly-Group,Update Success
