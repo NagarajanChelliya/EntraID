@@ -1,0 +1,104 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadOnlyDiscovery",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*",
+        "s3:ListAllMyBuckets",
+        "s3:GetBucketLocation",
+        "s3:ListBucket",
+        "lambda:ListFunctions",
+        "lambda:GetFunction",
+        "lambda:GetFunctionConfiguration",
+        "tag:GetResources",
+        "tag:GetTagKeys",
+        "tag:GetTagValues"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowEC2Create",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:RunInstances",
+        "ec2:CreateTags"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowEC2ManageOnlyMatchingTaggedResources",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:StartInstances",
+        "ec2:StopInstances",
+        "ec2:RebootInstances",
+        "ec2:TerminateInstances"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:ResourceTag/environment": "${aws:PrincipalTag/environment}",
+          "aws:ResourceTag/project": "${aws:PrincipalTag/project}"
+        }
+      }
+    },
+    {
+      "Sid": "AllowS3CreateBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:PutBucketTagging"
+      ],
+      "Resource": "arn:aws:s3:::*"
+    },
+    {
+      "Sid": "AllowS3AccessOnlyForMatchingTaggedBuckets",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket",
+        "s3:GetBucketTagging",
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::*",
+        "arn:aws:s3:::*/*"
+      ],
+      "Condition": {
+        "StringEquals": {
+          "s3:ResourceTag/environment": "${aws:PrincipalTag/environment}",
+          "s3:ResourceTag/project": "${aws:PrincipalTag/project}"
+        }
+      }
+    },
+    {
+      "Sid": "AllowLambdaCreate",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:CreateFunction",
+        "lambda:TagResource"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowLambdaManageOnlyMatchingTaggedFunctions",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:UpdateFunctionCode",
+        "lambda:UpdateFunctionConfiguration",
+        "lambda:DeleteFunction",
+        "lambda:InvokeFunction"
+      ],
+      "Resource": "arn:aws:lambda:*:*:function:*",
+      "Condition": {
+        "StringEquals": {
+          "aws:ResourceTag/environment": "${aws:PrincipalTag/environment}",
+          "aws:ResourceTag/project": "${aws:PrincipalTag/project}"
+        }
+      }
+    }
+  ]
+}
